@@ -1,0 +1,6 @@
+framework module Pods_FipeCarsMVVMExerciseTests {
+  umbrella header "Pods-FipeCarsMVVMExerciseTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

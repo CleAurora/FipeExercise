@@ -1,0 +1,5 @@
+#import <Foundation/Foundation.h>
+@interface PodsDummy_Pods_FipeCarsMVVMExercise_FipeCarsMVVMExerciseUITests : NSObject
+@end
+@implementation PodsDummy_Pods_FipeCarsMVVMExercise_FipeCarsMVVMExerciseUITests
+@end
