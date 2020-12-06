@@ -1,0 +1,20 @@
+PODS:
+  - Alamofire (5.4.0)
+  - PKHUD (5.3.0)
+
+DEPENDENCIES:
+  - Alamofire
+  - PKHUD
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - PKHUD
+
+SPEC CHECKSUMS:
+  Alamofire: 3b6a534a3df22db367e4dedeeca73d1ddfcf0e2f
+  PKHUD: 98f3e4bc904b9c916f1c5bb6d765365b5357291b
+
+PODFILE CHECKSUM: 70988ced97494815dabde865090b4d15246fec1c
+
+COCOAPODS: 1.10.0

@@ -3,18 +3,27 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3C53478551A707CDCF674633 /* Pods_FipeCars.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8DF8A85389060D70688DD3C /* Pods_FipeCars.framework */; };
 		424958392575E148007D82A5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 424958382575E148007D82A5 /* AppDelegate.swift */; };
 		4249583B2575E148007D82A5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4249583A2575E148007D82A5 /* SceneDelegate.swift */; };
-		4249583D2575E148007D82A5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4249583C2575E148007D82A5 /* ViewController.swift */; };
+		4249583D2575E148007D82A5 /* CarBrandsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4249583C2575E148007D82A5 /* CarBrandsViewController.swift */; };
 		424958402575E148007D82A5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4249583E2575E148007D82A5 /* Main.storyboard */; };
 		424958422575E14B007D82A5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 424958412575E14B007D82A5 /* Assets.xcassets */; };
 		424958452575E14B007D82A5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 424958432575E14B007D82A5 /* LaunchScreen.storyboard */; };
 		424958502575E14B007D82A5 /* FipeCarsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4249584F2575E14B007D82A5 /* FipeCarsTests.swift */; };
 		4249585B2575E14C007D82A5 /* FipeCarsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4249585A2575E14C007D82A5 /* FipeCarsUITests.swift */; };
+		424CA117257D5BFC00E4E9C3 /* KeyValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 424CA116257D5BFC00E4E9C3 /* KeyValue.swift */; };
+		424CA11F257D5D7A00E4E9C3 /* Fipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 424CA11E257D5D7A00E4E9C3 /* Fipe.swift */; };
+		424CA127257D5F7300E4E9C3 /* CarModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 424CA126257D5F7300E4E9C3 /* CarModel.swift */; };
+		424CA12D257D604F00E4E9C3 /* FipeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 424CA12C257D604F00E4E9C3 /* FipeService.swift */; };
+		424CA132257D625200E4E9C3 /* AlamofireFipeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 424CA131257D625200E4E9C3 /* AlamofireFipeService.swift */; };
+		424CA138257D661400E4E9C3 /* CarBrandsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 424CA137257D661400E4E9C3 /* CarBrandsViewModel.swift */; };
+		62D296A73AB7A809022FF03E /* Pods_FipeCars_FipeCarsUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72A5D290527AE7EA1FD14A8F /* Pods_FipeCars_FipeCarsUITests.framework */; };
+		CC879CDC158A50B89C5F2D8E /* Pods_FipeCarsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EE2BEA19C35BBCD536D3646 /* Pods_FipeCarsTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,10 +44,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		047545F3F717DBF8E498CD03 /* Pods-FipeCarsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FipeCarsTests.debug.xcconfig"; path = "Target Support Files/Pods-FipeCarsTests/Pods-FipeCarsTests.debug.xcconfig"; sourceTree = "<group>"; };
+		0B666FFD76DD9311B4B36BD4 /* Pods-FipeCars.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FipeCars.debug.xcconfig"; path = "Target Support Files/Pods-FipeCars/Pods-FipeCars.debug.xcconfig"; sourceTree = "<group>"; };
+		1EE2BEA19C35BBCD536D3646 /* Pods_FipeCarsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FipeCarsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		27F26B839412260B1DF64916 /* Pods-FipeCars.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FipeCars.release.xcconfig"; path = "Target Support Files/Pods-FipeCars/Pods-FipeCars.release.xcconfig"; sourceTree = "<group>"; };
 		424958352575E148007D82A5 /* FipeCars.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FipeCars.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		424958382575E148007D82A5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4249583A2575E148007D82A5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		4249583C2575E148007D82A5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4249583C2575E148007D82A5 /* CarBrandsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarBrandsViewController.swift; sourceTree = "<group>"; };
 		4249583F2575E148007D82A5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		424958412575E14B007D82A5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		424958442575E14B007D82A5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +62,17 @@
 		424958562575E14C007D82A5 /* FipeCarsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FipeCarsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4249585A2575E14C007D82A5 /* FipeCarsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FipeCarsUITests.swift; sourceTree = "<group>"; };
 		4249585C2575E14C007D82A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		424CA116257D5BFC00E4E9C3 /* KeyValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyValue.swift; sourceTree = "<group>"; };
+		424CA11E257D5D7A00E4E9C3 /* Fipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fipe.swift; sourceTree = "<group>"; };
+		424CA126257D5F7300E4E9C3 /* CarModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarModel.swift; sourceTree = "<group>"; };
+		424CA12C257D604F00E4E9C3 /* FipeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FipeService.swift; sourceTree = "<group>"; };
+		424CA131257D625200E4E9C3 /* AlamofireFipeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamofireFipeService.swift; sourceTree = "<group>"; };
+		424CA137257D661400E4E9C3 /* CarBrandsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarBrandsViewModel.swift; sourceTree = "<group>"; };
+		44ED9779DAEF0C6BD5978E17 /* Pods-FipeCars-FipeCarsUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FipeCars-FipeCarsUITests.release.xcconfig"; path = "Target Support Files/Pods-FipeCars-FipeCarsUITests/Pods-FipeCars-FipeCarsUITests.release.xcconfig"; sourceTree = "<group>"; };
+		4B05AE0233270C4B8BF94EFD /* Pods-FipeCars-FipeCarsUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FipeCars-FipeCarsUITests.debug.xcconfig"; path = "Target Support Files/Pods-FipeCars-FipeCarsUITests/Pods-FipeCars-FipeCarsUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		72A5D290527AE7EA1FD14A8F /* Pods_FipeCars_FipeCarsUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FipeCars_FipeCarsUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C8DF8A85389060D70688DD3C /* Pods_FipeCars.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FipeCars.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D8D6BC9AD0F1B1BA9DBB92A3 /* Pods-FipeCarsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FipeCarsTests.release.xcconfig"; path = "Target Support Files/Pods-FipeCarsTests/Pods-FipeCarsTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3C53478551A707CDCF674633 /* Pods_FipeCars.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +88,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC879CDC158A50B89C5F2D8E /* Pods_FipeCarsTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,12 +96,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				62D296A73AB7A809022FF03E /* Pods_FipeCars_FipeCarsUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0C09FDD569B4E3A63F047596 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C8DF8A85389060D70688DD3C /* Pods_FipeCars.framework */,
+				72A5D290527AE7EA1FD14A8F /* Pods_FipeCars_FipeCarsUITests.framework */,
+				1EE2BEA19C35BBCD536D3646 /* Pods_FipeCarsTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1BAB1BF8306BA76A1D35EA29 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0B666FFD76DD9311B4B36BD4 /* Pods-FipeCars.debug.xcconfig */,
+				27F26B839412260B1DF64916 /* Pods-FipeCars.release.xcconfig */,
+				4B05AE0233270C4B8BF94EFD /* Pods-FipeCars-FipeCarsUITests.debug.xcconfig */,
+				44ED9779DAEF0C6BD5978E17 /* Pods-FipeCars-FipeCarsUITests.release.xcconfig */,
+				047545F3F717DBF8E498CD03 /* Pods-FipeCarsTests.debug.xcconfig */,
+				D8D6BC9AD0F1B1BA9DBB92A3 /* Pods-FipeCarsTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		4249582C2575E148007D82A5 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +133,8 @@
 				4249584E2575E14B007D82A5 /* FipeCarsTests */,
 				424958592575E14C007D82A5 /* FipeCarsUITests */,
 				424958362575E148007D82A5 /* Products */,
+				1BAB1BF8306BA76A1D35EA29 /* Pods */,
+				0C09FDD569B4E3A63F047596 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,9 +151,12 @@
 		424958372575E148007D82A5 /* FipeCars */ = {
 			isa = PBXGroup;
 			children = (
+				424CA136257D65DE00E4E9C3 /* ViewModels */,
+				424CA12B257D603300E4E9C3 /* Services */,
+				424CA115257D5B9F00E4E9C3 /* Models */,
 				424958382575E148007D82A5 /* AppDelegate.swift */,
 				4249583A2575E148007D82A5 /* SceneDelegate.swift */,
-				4249583C2575E148007D82A5 /* ViewController.swift */,
+				4249583C2575E148007D82A5 /* CarBrandsViewController.swift */,
 				4249583E2575E148007D82A5 /* Main.storyboard */,
 				424958412575E14B007D82A5 /* Assets.xcassets */,
 				424958432575E14B007D82A5 /* LaunchScreen.storyboard */,
@@ -128,6 +183,33 @@
 			path = FipeCarsUITests;
 			sourceTree = "<group>";
 		};
+		424CA115257D5B9F00E4E9C3 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				424CA116257D5BFC00E4E9C3 /* KeyValue.swift */,
+				424CA11E257D5D7A00E4E9C3 /* Fipe.swift */,
+				424CA126257D5F7300E4E9C3 /* CarModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		424CA12B257D603300E4E9C3 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				424CA12C257D604F00E4E9C3 /* FipeService.swift */,
+				424CA131257D625200E4E9C3 /* AlamofireFipeService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		424CA136257D65DE00E4E9C3 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				424CA137257D661400E4E9C3 /* CarBrandsViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +217,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4249585F2575E14C007D82A5 /* Build configuration list for PBXNativeTarget "FipeCars" */;
 			buildPhases = (
+				0E43BA8152FCE4D322223E1C /* [CP] Check Pods Manifest.lock */,
 				424958312575E148007D82A5 /* Sources */,
 				424958322575E148007D82A5 /* Frameworks */,
 				424958332575E148007D82A5 /* Resources */,
+				1E4A0437093191FEA499E8D8 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -152,6 +236,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 424958622575E14C007D82A5 /* Build configuration list for PBXNativeTarget "FipeCarsTests" */;
 			buildPhases = (
+				1D9208902E027FEDD7A6199F /* [CP] Check Pods Manifest.lock */,
 				424958472575E14B007D82A5 /* Sources */,
 				424958482575E14B007D82A5 /* Frameworks */,
 				424958492575E14B007D82A5 /* Resources */,
@@ -170,9 +255,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 424958652575E14C007D82A5 /* Build configuration list for PBXNativeTarget "FipeCarsUITests" */;
 			buildPhases = (
+				B6F289414244D6BD37E8C9A5 /* [CP] Check Pods Manifest.lock */,
 				424958522575E14C007D82A5 /* Sources */,
 				424958532575E14C007D82A5 /* Frameworks */,
 				424958542575E14C007D82A5 /* Resources */,
+				360309C802B991CC17506663 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -253,13 +340,122 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0E43BA8152FCE4D322223E1C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FipeCars-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1D9208902E027FEDD7A6199F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FipeCarsTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1E4A0437093191FEA499E8D8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FipeCars/Pods-FipeCars-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FipeCars/Pods-FipeCars-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FipeCars/Pods-FipeCars-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		360309C802B991CC17506663 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FipeCars-FipeCarsUITests/Pods-FipeCars-FipeCarsUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FipeCars-FipeCarsUITests/Pods-FipeCars-FipeCarsUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FipeCars-FipeCarsUITests/Pods-FipeCars-FipeCarsUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B6F289414244D6BD37E8C9A5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FipeCars-FipeCarsUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		424958312575E148007D82A5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4249583D2575E148007D82A5 /* ViewController.swift in Sources */,
+				424CA11F257D5D7A00E4E9C3 /* Fipe.swift in Sources */,
+				4249583D2575E148007D82A5 /* CarBrandsViewController.swift in Sources */,
+				424CA132257D625200E4E9C3 /* AlamofireFipeService.swift in Sources */,
+				424CA127257D5F7300E4E9C3 /* CarModel.swift in Sources */,
+				424CA12D257D604F00E4E9C3 /* FipeService.swift in Sources */,
 				424958392575E148007D82A5 /* AppDelegate.swift in Sources */,
+				424CA117257D5BFC00E4E9C3 /* KeyValue.swift in Sources */,
+				424CA138257D661400E4E9C3 /* CarBrandsViewModel.swift in Sources */,
 				4249583B2575E148007D82A5 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -433,6 +629,7 @@
 		};
 		424958602575E14C007D82A5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0B666FFD76DD9311B4B36BD4 /* Pods-FipeCars.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -452,6 +649,7 @@
 		};
 		424958612575E14C007D82A5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 27F26B839412260B1DF64916 /* Pods-FipeCars.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -471,6 +669,7 @@
 		};
 		424958632575E14C007D82A5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 047545F3F717DBF8E498CD03 /* Pods-FipeCarsTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -493,6 +692,7 @@
 		};
 		424958642575E14C007D82A5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D8D6BC9AD0F1B1BA9DBB92A3 /* Pods-FipeCarsTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -515,6 +715,7 @@
 		};
 		424958662575E14C007D82A5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4B05AE0233270C4B8BF94EFD /* Pods-FipeCars-FipeCarsUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -535,6 +736,7 @@
 		};
 		424958672575E14C007D82A5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 44ED9779DAEF0C6BD5978E17 /* Pods-FipeCars-FipeCarsUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
