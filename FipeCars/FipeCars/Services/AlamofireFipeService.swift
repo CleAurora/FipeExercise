@@ -7,14 +7,18 @@
 
 import Alamofire
 
-final class AlamofireFipeService: FipeService {
+final class AlamofireFipeService: BrandsService, ModelsService {
     private let baseURL = "https://parallelum.com.br/fipe/api/v1/carros"
-    static let shared = AlamofireFipeService()
+    static let shared: BrandsService & ModelsService = AlamofireFipeService()
 
     private init() { }
 
     func getBrands(then handler: @escaping (Result<[Brand], Error>) -> Void) {
         makeRequest(withEndpoint: "marcas", then: handler)
+    }
+
+    func getModels(from brand: Brand, then handler: @escaping (Result<CarModel, Error>) -> Void) {
+        makeRequest(withEndpoint: "marcas/\(brand.code)/modelos", then: handler)
     }
 
     private func makeRequest<Output: Decodable>(withEndpoint endpoint: String, then handler: @escaping (Result<Output, Error>) -> Void) {

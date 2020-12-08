@@ -6,12 +6,12 @@
 //
 
 final class CarBrandsViewModel {
-    private let service: FipeService
+    private let service: BrandsService
 
-    private (set) var brands = [Brand]()
-    private (set) var error: Error? = nil
+    private(set) var brands = [Brand]()
+    private(set) var error: Error? = nil
 
-    init(service: FipeService = AlamofireFipeService.shared) {
+    init(service: BrandsService = AlamofireFipeService.shared) {
         self.service = service
     }
 

@@ -1,32 +1,34 @@
 //
-//  CarBrandsViewController.swift
+//  CarModelsViewController.swift
 //  FipeCars
 //
-//  Created by Cleís Aurora Pereira on 30/11/20.
+//  Created by Cleís Aurora Pereira on 07/12/20.
 //
 
 import UIKit
 import PKHUD
 
-final class CarBrandsViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+final class CarModelsViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     @IBOutlet weak var tableView: UITableView!
 
-    private let viewModel = CarBrandsViewModel()
+    var brand: Brand?
+
+    private lazy var viewModel = CarModelsViewModel(with: brand)
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        title = brand?.name
         fetch()
     }
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        viewModel.brands.count
+        viewModel.models.models.count
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let identifier = "BrandTableViewCell"
-        let cell = tableView.dequeueReusableCell(withIdentifier: identifier, for: indexPath)
-        cell.textLabel?.text = viewModel.brands[indexPath.row].name
+        let cell = tableView.dequeueReusableCell(withIdentifier: "ModelTableViewCell", for: indexPath)
+        cell.textLabel?.text = viewModel.models.models[indexPath.row].name
 
         return cell
     }
@@ -43,8 +45,9 @@ final class CarBrandsViewController: UIViewController, UITableViewDataSource, UI
         HUD.hide()
 
         if let error = viewModel.error {
-            HUD.show(
-                .labeledError(title: "Falha ao carregar", subtitle: error.localizedDescription)
+            HUD.flash(
+                .labeledError(title: "Falha ao carregar modelos", subtitle: error.localizedDescription),
+                delay: 5
             )
         } else {
             HUD.flash(.success, delay: 1)

@@ -22,6 +22,8 @@
 		424CA12D257D604F00E4E9C3 /* FipeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 424CA12C257D604F00E4E9C3 /* FipeService.swift */; };
 		424CA132257D625200E4E9C3 /* AlamofireFipeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 424CA131257D625200E4E9C3 /* AlamofireFipeService.swift */; };
 		424CA138257D661400E4E9C3 /* CarBrandsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 424CA137257D661400E4E9C3 /* CarBrandsViewModel.swift */; };
+		4280643A257EFFCA0000DE83 /* CarModelsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42806439257EFFCA0000DE83 /* CarModelsViewModel.swift */; };
+		42806440257F05050000DE83 /* CarModelsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4280643F257F05050000DE83 /* CarModelsViewController.swift */; };
 		62D296A73AB7A809022FF03E /* Pods_FipeCars_FipeCarsUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72A5D290527AE7EA1FD14A8F /* Pods_FipeCars_FipeCarsUITests.framework */; };
 		CC879CDC158A50B89C5F2D8E /* Pods_FipeCarsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EE2BEA19C35BBCD536D3646 /* Pods_FipeCarsTests.framework */; };
 /* End PBXBuildFile section */
@@ -68,6 +70,8 @@
 		424CA12C257D604F00E4E9C3 /* FipeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FipeService.swift; sourceTree = "<group>"; };
 		424CA131257D625200E4E9C3 /* AlamofireFipeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamofireFipeService.swift; sourceTree = "<group>"; };
 		424CA137257D661400E4E9C3 /* CarBrandsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarBrandsViewModel.swift; sourceTree = "<group>"; };
+		42806439257EFFCA0000DE83 /* CarModelsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarModelsViewModel.swift; sourceTree = "<group>"; };
+		4280643F257F05050000DE83 /* CarModelsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarModelsViewController.swift; sourceTree = "<group>"; };
 		44ED9779DAEF0C6BD5978E17 /* Pods-FipeCars-FipeCarsUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FipeCars-FipeCarsUITests.release.xcconfig"; path = "Target Support Files/Pods-FipeCars-FipeCarsUITests/Pods-FipeCars-FipeCarsUITests.release.xcconfig"; sourceTree = "<group>"; };
 		4B05AE0233270C4B8BF94EFD /* Pods-FipeCars-FipeCarsUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FipeCars-FipeCarsUITests.debug.xcconfig"; path = "Target Support Files/Pods-FipeCars-FipeCarsUITests/Pods-FipeCars-FipeCarsUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		72A5D290527AE7EA1FD14A8F /* Pods_FipeCars_FipeCarsUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FipeCars_FipeCarsUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -151,12 +155,12 @@
 		424958372575E148007D82A5 /* FipeCars */ = {
 			isa = PBXGroup;
 			children = (
+				4280643E257F04D20000DE83 /* ViewControllers */,
 				424CA136257D65DE00E4E9C3 /* ViewModels */,
 				424CA12B257D603300E4E9C3 /* Services */,
 				424CA115257D5B9F00E4E9C3 /* Models */,
 				424958382575E148007D82A5 /* AppDelegate.swift */,
 				4249583A2575E148007D82A5 /* SceneDelegate.swift */,
-				4249583C2575E148007D82A5 /* CarBrandsViewController.swift */,
 				4249583E2575E148007D82A5 /* Main.storyboard */,
 				424958412575E14B007D82A5 /* Assets.xcassets */,
 				424958432575E14B007D82A5 /* LaunchScreen.storyboard */,
@@ -206,8 +210,18 @@
 			isa = PBXGroup;
 			children = (
 				424CA137257D661400E4E9C3 /* CarBrandsViewModel.swift */,
+				42806439257EFFCA0000DE83 /* CarModelsViewModel.swift */,
 			);
 			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		4280643E257F04D20000DE83 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				4249583C2575E148007D82A5 /* CarBrandsViewController.swift */,
+				4280643F257F05050000DE83 /* CarModelsViewController.swift */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -451,6 +465,8 @@
 				424CA11F257D5D7A00E4E9C3 /* Fipe.swift in Sources */,
 				4249583D2575E148007D82A5 /* CarBrandsViewController.swift in Sources */,
 				424CA132257D625200E4E9C3 /* AlamofireFipeService.swift in Sources */,
+				42806440257F05050000DE83 /* CarModelsViewController.swift in Sources */,
+				4280643A257EFFCA0000DE83 /* CarModelsViewModel.swift in Sources */,
 				424CA127257D5F7300E4E9C3 /* CarModel.swift in Sources */,
 				424CA12D257D604F00E4E9C3 /* FipeService.swift in Sources */,
 				424958392575E148007D82A5 /* AppDelegate.swift in Sources */,

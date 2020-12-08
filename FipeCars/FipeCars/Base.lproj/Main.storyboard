@@ -56,11 +56,66 @@
                     <navigationItem key="navigationItem" title="Marcas de Carros" id="mez-eu-Qud"/>
                     <connections>
                         <outlet property="tableView" destination="20i-82-UbC" id="jS9-Jo-9mx"/>
+                        <segue destination="H2I-0x-q01" kind="show" identifier="ShowCarModelsSegue" id="OFK-r7-ec6"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1439.1304347826087" y="93.75"/>
+        </scene>
+        <!--Modelos de Carros-->
+        <scene sceneID="qV5-bF-X2n">
+            <objects>
+                <viewController storyboardIdentifier="CarModelsViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="H2I-0x-q01" customClass="CarModelsViewController" customModule="FipeCars" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hhZ-K0-NZA">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Sgh-sC-Tcv">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ModelTableViewCell" textLabel="thT-tN-F9G" style="IBUITableViewCellStyleDefault" id="WvD-Sr-UeW">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="WvD-Sr-UeW" id="fhO-LY-sZM">
+                                            <rect key="frame" x="0.0" y="0.0" width="383" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="thT-tN-F9G">
+                                                    <rect key="frame" x="20" y="0.0" width="355" height="43.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="H2I-0x-q01" id="JI4-Vz-2Xo"/>
+                                    <outlet property="delegate" destination="H2I-0x-q01" id="pwC-eg-fUY"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="GdY-9S-SI5"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="GdY-9S-SI5" firstAttribute="bottom" secondItem="Sgh-sC-Tcv" secondAttribute="bottom" id="3uh-Ce-Qah"/>
+                            <constraint firstItem="Sgh-sC-Tcv" firstAttribute="leading" secondItem="GdY-9S-SI5" secondAttribute="leading" id="Pfw-8M-zmU"/>
+                            <constraint firstItem="GdY-9S-SI5" firstAttribute="trailing" secondItem="Sgh-sC-Tcv" secondAttribute="trailing" id="Un9-fJ-PvV"/>
+                            <constraint firstItem="Sgh-sC-Tcv" firstAttribute="top" secondItem="GdY-9S-SI5" secondAttribute="top" id="zqW-mL-r2i"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Modelos de Carros" id="j6H-3b-sYZ"/>
+                    <connections>
+                        <outlet property="tableView" destination="Sgh-sC-Tcv" id="etd-aH-dTD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Gjo-Xq-Mf3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2310" y="94"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="ujc-Mm-x2O">
