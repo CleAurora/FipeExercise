@@ -130,6 +130,26 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		4212787D258199CA0061799F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				4249583E2575E148007D82A5 /* Main.storyboard */,
+				424958412575E14B007D82A5 /* Assets.xcassets */,
+				424958432575E14B007D82A5 /* LaunchScreen.storyboard */,
+				424958462575E14B007D82A5 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		4212787E258199DC0061799F /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				424958382575E148007D82A5 /* AppDelegate.swift */,
+				4249583A2575E148007D82A5 /* SceneDelegate.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
 		4249582C2575E148007D82A5 = {
 			isa = PBXGroup;
 			children = (
@@ -155,16 +175,12 @@
 		424958372575E148007D82A5 /* FipeCars */ = {
 			isa = PBXGroup;
 			children = (
+				4212787E258199DC0061799F /* Common */,
+				424CA115257D5B9F00E4E9C3 /* Models */,
+				4212787D258199CA0061799F /* Resources */,
+				424CA12B257D603300E4E9C3 /* Services */,
 				4280643E257F04D20000DE83 /* ViewControllers */,
 				424CA136257D65DE00E4E9C3 /* ViewModels */,
-				424CA12B257D603300E4E9C3 /* Services */,
-				424CA115257D5B9F00E4E9C3 /* Models */,
-				424958382575E148007D82A5 /* AppDelegate.swift */,
-				4249583A2575E148007D82A5 /* SceneDelegate.swift */,
-				4249583E2575E148007D82A5 /* Main.storyboard */,
-				424958412575E14B007D82A5 /* Assets.xcassets */,
-				424958432575E14B007D82A5 /* LaunchScreen.storyboard */,
-				424958462575E14B007D82A5 /* Info.plist */,
 			);
 			path = FipeCars;
 			sourceTree = "<group>";
@@ -651,7 +667,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HPXMDUH97M;
-				INFOPLIST_FILE = FipeCars/Info.plist;
+				INFOPLIST_FILE = FipeCars/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -671,7 +687,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HPXMDUH97M;
-				INFOPLIST_FILE = FipeCars/Info.plist;
+				INFOPLIST_FILE = FipeCars/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
