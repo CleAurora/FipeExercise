@@ -22,6 +22,23 @@ final class CarModelsViewController: UIViewController, UITableViewDelegate, UITa
         fetch()
     }
 
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        super.prepare(for: segue, sender: sender)
+
+        if let model = sender as? Model, let carYearsViewController = segue.destination as? CarYearsViewController {
+            carYearsViewController.brand = brand
+            carYearsViewController.model = model
+        }
+    }
+
+
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let model = viewModel.models.models[indexPath.row]
+
+        performSegue(withIdentifier: "ShowCarYearsSegue", sender: model)
+        tableView.deselectRow(at: indexPath, animated: true)
+    }
+
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         viewModel.models.models.count
     }

@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		3C53478551A707CDCF674633 /* Pods_FipeCars.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8DF8A85389060D70688DD3C /* Pods_FipeCars.framework */; };
+		421278892581A2130061799F /* CarYearsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 421278882581A2130061799F /* CarYearsViewModel.swift */; };
+		4212788E2581A6220061799F /* CarYearsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4212788D2581A6220061799F /* CarYearsViewController.swift */; };
 		424958392575E148007D82A5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 424958382575E148007D82A5 /* AppDelegate.swift */; };
 		4249583B2575E148007D82A5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4249583A2575E148007D82A5 /* SceneDelegate.swift */; };
 		4249583D2575E148007D82A5 /* CarBrandsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4249583C2575E148007D82A5 /* CarBrandsViewController.swift */; };
@@ -50,6 +52,8 @@
 		0B666FFD76DD9311B4B36BD4 /* Pods-FipeCars.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FipeCars.debug.xcconfig"; path = "Target Support Files/Pods-FipeCars/Pods-FipeCars.debug.xcconfig"; sourceTree = "<group>"; };
 		1EE2BEA19C35BBCD536D3646 /* Pods_FipeCarsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FipeCarsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		27F26B839412260B1DF64916 /* Pods-FipeCars.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FipeCars.release.xcconfig"; path = "Target Support Files/Pods-FipeCars/Pods-FipeCars.release.xcconfig"; sourceTree = "<group>"; };
+		421278882581A2130061799F /* CarYearsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarYearsViewModel.swift; sourceTree = "<group>"; };
+		4212788D2581A6220061799F /* CarYearsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarYearsViewController.swift; sourceTree = "<group>"; };
 		424958352575E148007D82A5 /* FipeCars.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FipeCars.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		424958382575E148007D82A5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4249583A2575E148007D82A5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -227,6 +231,7 @@
 			children = (
 				424CA137257D661400E4E9C3 /* CarBrandsViewModel.swift */,
 				42806439257EFFCA0000DE83 /* CarModelsViewModel.swift */,
+				421278882581A2130061799F /* CarYearsViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -236,6 +241,7 @@
 			children = (
 				4249583C2575E148007D82A5 /* CarBrandsViewController.swift */,
 				4280643F257F05050000DE83 /* CarModelsViewController.swift */,
+				4212788D2581A6220061799F /* CarYearsViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -478,6 +484,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				421278892581A2130061799F /* CarYearsViewModel.swift in Sources */,
 				424CA11F257D5D7A00E4E9C3 /* Fipe.swift in Sources */,
 				4249583D2575E148007D82A5 /* CarBrandsViewController.swift in Sources */,
 				424CA132257D625200E4E9C3 /* AlamofireFipeService.swift in Sources */,
@@ -488,6 +495,7 @@
 				424958392575E148007D82A5 /* AppDelegate.swift in Sources */,
 				424CA117257D5BFC00E4E9C3 /* KeyValue.swift in Sources */,
 				424CA138257D661400E4E9C3 /* CarBrandsViewModel.swift in Sources */,
+				4212788E2581A6220061799F /* CarYearsViewController.swift in Sources */,
 				4249583B2575E148007D82A5 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

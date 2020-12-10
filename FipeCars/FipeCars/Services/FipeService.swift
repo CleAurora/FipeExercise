@@ -14,3 +14,7 @@ protocol BrandsService {
 protocol ModelsService {
     func getModels(from brand: Brand, then handler: @escaping (Result<CarModel, Error>) -> Void)
 }
+
+protocol YearsService {
+    func getYears(from brand: Brand, with model: Model, then handler: @escaping (Result<[Year], Error>) -> Void)
+}

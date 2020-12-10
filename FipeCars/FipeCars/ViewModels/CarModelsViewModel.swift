@@ -21,6 +21,7 @@ final class CarModelsViewModel {
 
     func load(then handler: @escaping () -> ()) {
         error = nil
+        
         if let brand = brand {
             service.getModels(from: brand) { result in
                 do {

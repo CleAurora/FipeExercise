@@ -7,9 +7,9 @@
 
 import Alamofire
 
-final class AlamofireFipeService: BrandsService, ModelsService {
+final class AlamofireFipeService: BrandsService, ModelsService, YearsService {
     private let baseURL = "https://parallelum.com.br/fipe/api/v1/carros"
-    static let shared: BrandsService & ModelsService = AlamofireFipeService()
+    static let shared: BrandsService & ModelsService & YearsService = AlamofireFipeService()
 
     private init() { }
 
@@ -19,6 +19,10 @@ final class AlamofireFipeService: BrandsService, ModelsService {
 
     func getModels(from brand: Brand, then handler: @escaping (Result<CarModel, Error>) -> Void) {
         makeRequest(withEndpoint: "marcas/\(brand.code)/modelos", then: handler)
+    }
+
+    func getYears(from brand: Brand, with model: Model, then handler: @escaping (Result<[Year], Error>) -> Void) {
+        makeRequest(withEndpoint: "marcas/\(brand.code)/modelos/\(model.code)/anos", then: handler)
     }
 
     private func makeRequest<Output: Decodable>(withEndpoint endpoint: String, then handler: @escaping (Result<Output, Error>) -> Void) {
