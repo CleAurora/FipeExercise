@@ -5,7 +5,7 @@
 //  Created by Cleís Aurora Pereira on 06/12/20.
 //
 
-struct Fipe: Encodable {
+struct Fipe: Decodable {
     let value: String
     let brand: String
     let model: String

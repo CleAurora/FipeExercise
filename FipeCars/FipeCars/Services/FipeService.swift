@@ -18,3 +18,7 @@ protocol ModelsService {
 protocol YearsService {
     func getYears(from brand: Brand, with model: Model, then handler: @escaping (Result<[Year], Error>) -> Void)
 }
+
+protocol FipeService {
+    func getFipe(from brand: Brand, with model: Model, on year: Year, then handler: @escaping (Result<Fipe, Error>) -> Void)
+}

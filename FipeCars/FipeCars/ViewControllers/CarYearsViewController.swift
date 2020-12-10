@@ -23,6 +23,23 @@ final class CarYearsViewController: UIViewController, UITableViewDelegate, UITab
         fetch()
     }
 
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        super.prepare(for: segue, sender: sender)
+
+        if let year = sender as? Year, let carFipeViewController = segue.destination as? CarFipeViewController {
+            carFipeViewController.brand = brand
+            carFipeViewController.model = model
+            carFipeViewController.year = year
+        }
+    }
+
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let year = viewModel.years[indexPath.row]
+
+        performSegue(withIdentifier: "ShowCarFipeSegue", sender: year)
+        tableView.deselectRow(at: indexPath, animated: true)
+    }
+
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         viewModel.years.count
     }

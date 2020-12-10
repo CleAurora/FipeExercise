@@ -31,7 +31,6 @@ final class CarModelsViewController: UIViewController, UITableViewDelegate, UITa
         }
     }
 
-
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let model = viewModel.models.models[indexPath.row]
 

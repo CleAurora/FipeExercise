@@ -10,6 +10,8 @@
 		3C53478551A707CDCF674633 /* Pods_FipeCars.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8DF8A85389060D70688DD3C /* Pods_FipeCars.framework */; };
 		421278892581A2130061799F /* CarYearsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 421278882581A2130061799F /* CarYearsViewModel.swift */; };
 		4212788E2581A6220061799F /* CarYearsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4212788D2581A6220061799F /* CarYearsViewController.swift */; };
+		421278932581AAE00061799F /* CarFipeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 421278922581AAE00061799F /* CarFipeViewController.swift */; };
+		4212789B2581AB0D0061799F /* CarFipeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4212789A2581AB0D0061799F /* CarFipeViewModel.swift */; };
 		424958392575E148007D82A5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 424958382575E148007D82A5 /* AppDelegate.swift */; };
 		4249583B2575E148007D82A5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4249583A2575E148007D82A5 /* SceneDelegate.swift */; };
 		4249583D2575E148007D82A5 /* CarBrandsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4249583C2575E148007D82A5 /* CarBrandsViewController.swift */; };
@@ -54,6 +56,8 @@
 		27F26B839412260B1DF64916 /* Pods-FipeCars.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FipeCars.release.xcconfig"; path = "Target Support Files/Pods-FipeCars/Pods-FipeCars.release.xcconfig"; sourceTree = "<group>"; };
 		421278882581A2130061799F /* CarYearsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarYearsViewModel.swift; sourceTree = "<group>"; };
 		4212788D2581A6220061799F /* CarYearsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarYearsViewController.swift; sourceTree = "<group>"; };
+		421278922581AAE00061799F /* CarFipeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarFipeViewController.swift; sourceTree = "<group>"; };
+		4212789A2581AB0D0061799F /* CarFipeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarFipeViewModel.swift; sourceTree = "<group>"; };
 		424958352575E148007D82A5 /* FipeCars.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FipeCars.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		424958382575E148007D82A5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4249583A2575E148007D82A5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -137,9 +141,7 @@
 		4212787D258199CA0061799F /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				4249583E2575E148007D82A5 /* Main.storyboard */,
 				424958412575E14B007D82A5 /* Assets.xcassets */,
-				424958432575E14B007D82A5 /* LaunchScreen.storyboard */,
 				424958462575E14B007D82A5 /* Info.plist */,
 			);
 			path = Resources;
@@ -152,6 +154,15 @@
 				4249583A2575E148007D82A5 /* SceneDelegate.swift */,
 			);
 			path = Common;
+			sourceTree = "<group>";
+		};
+		421278A22581B2220061799F /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				4249583E2575E148007D82A5 /* Main.storyboard */,
+				424958432575E14B007D82A5 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
 			sourceTree = "<group>";
 		};
 		4249582C2575E148007D82A5 = {
@@ -179,6 +190,7 @@
 		424958372575E148007D82A5 /* FipeCars */ = {
 			isa = PBXGroup;
 			children = (
+				421278A22581B2220061799F /* Storyboards */,
 				4212787E258199DC0061799F /* Common */,
 				424CA115257D5B9F00E4E9C3 /* Models */,
 				4212787D258199CA0061799F /* Resources */,
@@ -229,6 +241,7 @@
 		424CA136257D65DE00E4E9C3 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				4212789A2581AB0D0061799F /* CarFipeViewModel.swift */,
 				424CA137257D661400E4E9C3 /* CarBrandsViewModel.swift */,
 				42806439257EFFCA0000DE83 /* CarModelsViewModel.swift */,
 				421278882581A2130061799F /* CarYearsViewModel.swift */,
@@ -239,6 +252,7 @@
 		4280643E257F04D20000DE83 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				421278922581AAE00061799F /* CarFipeViewController.swift */,
 				4249583C2575E148007D82A5 /* CarBrandsViewController.swift */,
 				4280643F257F05050000DE83 /* CarModelsViewController.swift */,
 				4212788D2581A6220061799F /* CarYearsViewController.swift */,
@@ -488,8 +502,10 @@
 				424CA11F257D5D7A00E4E9C3 /* Fipe.swift in Sources */,
 				4249583D2575E148007D82A5 /* CarBrandsViewController.swift in Sources */,
 				424CA132257D625200E4E9C3 /* AlamofireFipeService.swift in Sources */,
+				421278932581AAE00061799F /* CarFipeViewController.swift in Sources */,
 				42806440257F05050000DE83 /* CarModelsViewController.swift in Sources */,
 				4280643A257EFFCA0000DE83 /* CarModelsViewModel.swift in Sources */,
+				4212789B2581AB0D0061799F /* CarFipeViewModel.swift in Sources */,
 				424CA127257D5F7300E4E9C3 /* CarModel.swift in Sources */,
 				424CA12D257D604F00E4E9C3 /* FipeService.swift in Sources */,
 				424958392575E148007D82A5 /* AppDelegate.swift in Sources */,
